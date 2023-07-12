@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ID vs Class in HTML</title>
+  <style>
+    #unique-id{
+      color: red;
+    }
+    .common-class{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>ID vs Class in HTML</h1>
+
+  <p>
+    In HTML, both the <strong>id</strong> and <strong>class</strong> attributes are used to select and style elements, but they have some key differences:
+  </p>
+
+  <h2>ID (id attribute)</h2>
+  <ul>
+    <li>The "id" attribute is used to uniquely identify an element on a web page.</li>
+    <li>An ID must be unique within the HTML document. No two elements should have the same ID.</li>
+    <li>It is usually used to style or target a specific element with CSS or JavaScript.</li>
+    <li>You can select an element by its ID using the CSS selector <code>#your-id</code> or in JavaScript using <code>document.getElementById('your-id')</code>.</li>
+    <li>IDs are often used for important elements that require specific functionality or styling.</li>
+  </ul>
+
+  <h2>Class (class attribute)</h2>
+  <ul>
+    <li>The "class" attribute is used to define one or more class names for an element.</li>
+    <li>Unlike the "id" attribute, classes can be shared by multiple elements. Multiple elements can have the same class.</li>
+    <li>Classes are typically used to group and style similar elements together.</li>
+    <li>You can select elements by their class using the CSS selector <code>.your-class</code> or in JavaScript using <code>document.getElementsByClassName('your-class')</code> or <code>document.querySelector('.your-class')</code>.</li>
+    <li>Classes are helpful when you want to apply common styles to different elements or when you want to select and manipulate multiple elements at once.</li>
+  </ul>
+
+  <h3>An Example:</h3>
+  <p id="unique-id">This paragraph has a unique ID.</p>
+  <p class="common-class">This paragraph shares a common class.</p>
+  <p class="common-class">So does this one.</p>
+
+</body>
+</html>

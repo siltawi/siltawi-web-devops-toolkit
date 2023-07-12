@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline vs Block Elements</title>
+  <style>
+    /* Example CSS for demonstration purposes */
+    .inline-element {
+      display: inline;
+      border: 1px solid red;
+      padding: 5px;
+    }
+
+    .block-element {
+      display: block;
+      border: 1px solid blue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inline vs Block Elements</h1>
+
+  <p class="block-element">
+    This is a block-level paragraph element. It starts on a new line and occupies the full width available by default. Block elements create line breaks before and after themselves.
+  </p>
+
+  <p>
+    This is an inline <span class="inline-element">span</span> element within a paragraph. Inline elements do not start on a new line and only take up as much space as necessary. By default, they do not create line breaks before or after themselves.
+  </p>
+
+  <div class="block-element">
+    <h2>This is a block-level heading</h2>
+    <p>
+      Block elements are often used to structure larger sections of content, such as headings, paragraphs, lists, or containers. They stack vertically on top of each other.
+    </p>
+    <ul>
+      <li>This</li>
+      <li>is</li>
+      <li>a</li>
+      <li>block-level</li>
+      <li>unordered list</li>
+    </ul>
+  </div>
+
+  <p>
+    Inline elements, like <a href="https://example.com" class="inline-element">links</a>, <strong>emphasized text</strong>, or <code>code snippets</code>, are commonly used within paragraphs or to style smaller portions of content.
+  </p>
+</body>
+</html>

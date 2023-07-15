@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element Selectors */
+    body {
+      background-color: #333;
+    }
+
+    /* . is for classes */
+    .primary-heading {
+      color: blue;
+    }
+
+    /* # is for IDs */
+    #welcome {
+      background-color: #f4f4f4;
+    }
+
+    /* Multiple Selectors */
+    #welcome,
+    #about {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* Nested Selectors */
+    #welcome p {
+      font-size: 20px;
+    }
+
+    #about {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>CSS selectors are patterns used to select the element(s) you want to style in CSS. They are used to tell the
+      browser which HTML elements should be applied to the CSS property values inside the rule.</p>
+    <ul>
+
+      <li>
+
+        Simple selectors select elements based on their name, id, or class. For example, the selector h1 will select all
+        <h1> elements on the page.
+      </li>
+      <li>
+        Combinator selectors combine simple selectors to select elements based on their relationship to each other. For
+        example, the selector h1 + p will select all <p> elements that are immediately preceded by an
+        <h1> element.
+
+      </li>
+      <li>
+
+        Pseudo-class selectors select elements based on their state or condition. For example, the selector a:hover will
+        select all <a> elements that are currently being hovered over by the mouse.
+      </li>
+      <li>
+
+        Pseudo-elements selectors select and style a part of an element. For example, the selector ::after will select
+        the element's after pseudo-element, which is a special element that is inserted after the element in the DOM.
+      </li>
+      <li>
+
+        Attribute selectors select elements based on their attributes. For example, the selector a[href] will select all
+        <a> elements that have a href attribute.
+      </li>
+    </ul>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>
+      CSS selectors can be combined to create complex selectors that select multiple elements or elements with specific
+      properties. For example, the selector h1.my-class:hover will select all
+    <h1> elements that have the my-class class and are currently being hovered over by the mouse.
+
+      CSS selectors are an essential part of CSS, and they allow you to precisely control which elements are styled by
+      your CSS rules. By understanding how CSS selectors work, you can create more powerful and flexible CSS styles.
+      </p>
+  </div>
+</body>
+
+</html>

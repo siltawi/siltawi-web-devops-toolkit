@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+    }
+
+    .clr {
+      clear: both;
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .box p {
+      /* Text Align */
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+
+    #box-2 {
+      float: left;
+      width: 68%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Float</h3>
+      <p>Float ~ The float property can be used to align an entire block element to the left or right such that other
+        content flows around it. It works exactly the same way as the HTML align attribute applies to the img element.
+      </p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Text-align</h3>
+      <p>
+        Text-align ~ You can use the text-align property to define whether the content of a block element is aligned to
+        the left, right, in the center or justified to both margins. The content typically refers to text but can also
+        apply to images and other block elements (the latter applies to Internet Explorer only). This essentially
+        replaces the align attribute in HTML as it applies to positioning the content of a block element. The value can
+        be one of the following:
+        <ul>
+          <li>
+            left - The text is aligned to the left.
+          </li>
+          <li>
+            center - The text is aligned in the center.
+          </li>
+          <li>
+            right - The text is aligned to the right.
+          </li>
+          <li>
+            justify - The text is aligned to both the left and right.
+          </li>
+        </ul>
+      </p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Box 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi
+        veritatis illo impedit minus unde.</p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="box-4" class="box">
+      <h3>Box 4 </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor, soluta esse voluptas aliquam eligendi
+        veritatis illo impedit minus unde.</p>
+    </div>
+  </div>
+</body>
+
+</html>

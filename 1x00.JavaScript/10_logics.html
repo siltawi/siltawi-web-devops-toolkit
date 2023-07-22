@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logics</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Conditions</h2>
+    <ol>
+        <li>
+            <h4>If Statements</h4>
+            <p>In any programming language, there will be times where you need to execute certain blocks of code and
+                commands if a certain condition is true or false. </p>
+            <pre>
+    if (condition) {
+        // code to execute if condition is true
+        }
+
+    //if else Statements
+    const x = 10;
+
+    if (x > 5) {
+    console.log(`${x} is greater than 5`);
+    } else {
+    console.log(`${x} is less than or equal to 5`);
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Else If Statements</h4>
+            <p>There may be cases where you want to execute different code blocks depending on multiple conditions. </p>
+            <pre>
+    const d = new Date();
+    const hour = d.getHours();
+    if (hour < 12) {
+        console.log('Good Morning!');
+    } else if (hour < 18) {
+        console.log('Good Afternoon!');
+    } else {
+        console.log('Good Night!');
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Nesting</h4>
+            <p>There may be cases where you need to have if statements inside of if statements. </p>
+            <pre>
+    if (hour < 12) {
+        console.log('Good Morning!');
+        
+        if (hour === 6) {
+            console.log('Wake up!');
+        }
+        } else if (hour < 18) {
+        console.log('Good Afternoon!');
+        } else {
+        console.log('Good Night!');
+        
+        if (hour >= 20) {
+            console.log('zzzzzzzzzzz!');
+        }
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Multiple Conditions</h4>
+            <p>We can test for multiple conditions in the same if statement by using the && (AND) and the || (OR) logical operators.</p>
+            <pre>
+    if (hour >= 7 && hour < 15) {
+        console.log('It is work time!');
+        }
+        
+    if (hour === 6 || hour === 20) {
+    console.log('Brush your teeth!');
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Switches</h4>
+            <p>If you find yourself with a lot of else-if statements and you are testing a single value, you may want to consider using a switch statement.</p>
+            <pre>
+    switch (expression) {
+        case value1:
+            statement1;
+            break;
+        case value2:
+            statement2;
+            break;
+        default:
+            statement3;
+        }
+            </pre>
+        </li>
+        <li>
+            <h4>Ternary Operator</h4>
+            <p>There is a third way to write conditional logic. This is called the ternary operator. It is basically a shorthand, one line if-else statement. The actual operator is just a question mark. </p>
+            <pre>
+    condition ? true : false;
+
+    const auth = true;
+
+    const redirect = auth
+    ? (alert('Welcome To The Dashboard'), '/dashboard')
+    : (alert('Access Denied'), '/login');
+
+    console.log(redirect);
+
+    auth && console.log('Welcome to the dashboard');
+            </pre>
+        </li>
+    </ol>
+</body>
+
+</html>

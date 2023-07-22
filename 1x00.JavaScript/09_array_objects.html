@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & Objects</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Array</h2>
+    <p>Arrays are a special type of object in JavaScript.</p>
+    <img src="assets/img/array.png" width="600px" />
+    <pre>const num = [15, 25, 60, 23, 1, 301]; <br>
+        const str = ['chair', 'table', 'white board'];
+    </pre>
+    <ul>
+        <li><b>Array Length</b><br>
+            <pre>num.length</pre>
+        </li>
+        <li><b>Manipulating</b><br>
+            Assigning: <pre>str[2] = 'laptop'</pre><br>
+            Adding to Last: <pre>str.push('table')</pre><br>
+            Adding to First: <pre>str.unshift('speaker')</pre><br>
+            Removing from Last: <pre>str.pop()</pre><br>
+            Removing from First: <pre>str.shift()</pre><br>
+            Flip/Reverse: <pre>num.reverse()</pre><br>
+            Concatenate: <pre>num.concat(str)</pre><br>
+        </li>
+    </ul>
+
+    <h2>Objects</h2>
+    <img src="assets/img/object.png" width="600px" />
+    <pre>
+        const menus = {
+            title: 'Special Burger',
+            category: {
+              type: 'Burger',
+              time: 'Lunch'
+            },
+            weight : '120g',
+            ingredients: ['Cheese', 'Onion', 'Salad', 'Egg', 'Ketchup', 'Ground Beef'],
+            price: "250",
+            whatsTheMenu: function(){
+                console.log(`Today's menu is ${this.title}`);
+            }
+          };
+    </pre>    
+
+</body>
+
+</html>

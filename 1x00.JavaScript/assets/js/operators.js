@@ -12,7 +12,7 @@ result = y**x;
 
 // Increment 
 result= ++ y; // pre 
-result= y++; // pre 
+result= y++; // post 
 
 // Decrement
 result = --x; // result = x - 1

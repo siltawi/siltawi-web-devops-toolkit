@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #a1449e;
+    --primary-light-color: #d356cf;
+    --secondary-color: #E9F4F6;
+    --dark-color: #535353 ;
+    --text-color: #181818 ;
+    --light-color: #f5f5f5;
+    --info-color: #8b8b8b;
+}
+
+body{
+    font-family: system-ui;
+    width: 100%;
+    text-align:center !important;
+}
+h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    line-height: 2rem;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+/* form items */
+label {
+    font-family: Montserrat;
+    color: var(--primary-light-color);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: left;
+}
+input{
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: var(--dark-color) 1px solid;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+.number {
+    width: 50%;
+}
+
+span { 
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* contents */
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 40px;
+}
+.card .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-1{
+    margin: 20px 10px;
+}
+.display_output {
+    padding: 20px 0px;
+}
+.display_output{
+    background-color: var(--light-color);
+    width: 260px;
+    height: 180px;
+    margin: 20px 10px;
+    border-radius: 20px;
+}
+.button {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    padding: 8px 25px;
+
+    cursor: pointer;
+    border: var(--primary-light-color) 1px solid;
+    border-radius: 16px;
+    background: var(--primary-color);
+}
+
+@media(max-width: 920px) {
+    .card{
+        width: 60%;
+        padding: 15px;
+    }
+    .card .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* badges */
+.success {background-color: #04AA6D;}
+.info {
+    color: #E9F4F6;
+    background-color: var(--info-color);
+}
+.warning{
+    color: #232424;
+    background-color: #fab144;
+    }
+.danger {background-color: #dd5a51;}

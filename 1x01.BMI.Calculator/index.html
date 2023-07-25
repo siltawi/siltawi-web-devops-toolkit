@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="text-align: center;">
+    <h2>Body Mass Index <b>(BMI)</b> Calculator</h2>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-1">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter your name" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter father name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height</label>
+                    <input class="number" type="number" id="height" placeholder="cm" />
+                </div>
+
+                <div class="form-group">
+                    <label for="Weight">Weight</label>
+                    <input class="number" type="text" id="weight" placeholder="kg" />
+                </div>
+
+            </div>
+    
+            <div class="col-2">
+                <div class="display_output" id="result">
+                </div>
+                <button class="button" type="submit"  id="btnCalc" >Calculate BMI</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

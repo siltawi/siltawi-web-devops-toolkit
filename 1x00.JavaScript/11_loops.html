@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops / Iteration</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Iteration / Loops</h2>
+    <p>A loop is a control structure. It provides a way to do iteration in programming. Iteration is a process where you repeat something over and over again until a certain condition is or is met. This can help automate tasks.
+        <br>There are many different kinds of loops in programming, and one of the most common loop is the for loop.</p>
+    
+    <ul>
+        <li><h4>For Loop</h4>
+            <pre>
+for(initialization, condition, increment){
+    statement
+}
+            </pre>
+        </li>
+        <li><h4>While Loop</h4>
+            <pre>
+while (condition) {
+    statement
+    }
+            </pre>
+        </li>
+        <li><h4>Break & Continue</h4>
+            <p>We can create conditions inside of a loop to test for different things within each iteration. There may be cases where you want to stop the loop from running if a certain condition is met. In this case, you can use a break statement to break out of the loop.</p>
+            <pre>
+for (let i = 1; i <= 10; i++) {
+    if (i === 4) {
+        console.log('Found the number 5!');
+        break;
+    }
+    
+    console.log('Number ' + i);
+    }
+
+
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        console.log('Skipping 5!');
+        continue;
+    }
+    
+    console.log('Number ' + i);
+    }
+            </pre>
+        </li>
+    </ul>
+</body>
+</html>

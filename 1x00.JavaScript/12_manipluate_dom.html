@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
 
+    <link href="assets/css/style.css" rel="stylesheet" />
     <script src="assets/js/dom.js"></script>
 </head>
 <body>
     <h2>DOM (Document Object Model) Manipulation</h2>
+    <p>The DOM stands for <b>Document Object Model</b>, It is essentially a programming interface for web/HTML documents. </p>
+    <img src="assets/img/dom-tree-example.png" width="600px" />
+    
+    <h4>Document Properties/Elements</h4>
+    <p>We can access DOM elements directly, such as the body</p>
+    <pre>console.log(document.body);</pre>
+    <p>We can also access elements such as links and images. Let's add a link to the HTML</p>
+    <pre>href="https://siltawi.com"</pre>
+    <p>We can get all of the links with</p>
+    <pre>console.log(document.links);</pre>
 
+    <h4>Document Selection Methods</h4>
+    <p>Getting elements using direct properties is not usually the way you want to do this. There are special methods available that allow us to directly select elements easily</p>
+    <pre>href="https://siltawi.com" id='pageLink'
+console.log(document.getElementById('pageLink'));</pre>
+</script>
+</pre>
+<p>Now let's say we want to add some text into the div element. We can easily do that using the innerHTML property.</p>
+<pre>document.getElementById('pageLink').innerHTML = 'Siltawi Training is Awesome';</pre>
+
+<p>The DOM was created to be independent of any particular language. Yes, JavaScript is definitely the most common language to do this stuff with, but implementations of the DOM can be built for any language, as this Python example demonstrates: </p>
+<pre>
+    # Python DOM example
+    import xml.dom.minidom as m
+    doc = m.parse(r"C:\python_ex1.xml")
+    doc.nodeName # DOM property of document object
+    p_list = doc.getElementsByTagName("para")
+</pre>
+
+    <h4>Example</h4>
+    <p>Below is a simple example of manipulating DOM when an action of button clicking</p>
     <input id="name" />
     <button id="btn" onclick="greetings()">Greetings</button>
     <br>

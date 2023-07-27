@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="assets/js/error.js"></script>
+  </head>
+  <body>
+    <h2>Error Handling</h2>
+    <p>Generally, errors can occur as a result of mistakes, unexpected user input, and a thousand other reasons. But, hopefully, there exists a try..catch syntax construct, allowing to catch errors, so the script can do something more reasonable.</p>
+
+    <h4>The syntax of try...catch</h4>
+    <p>Two blocks are included in the try..catch construct: try and catch:</p>
+<pre>
+    try {
+        // code
+      } catch (err) {
+        // error handling
+      }
+</pre>
+
+<p>The code works in the following order:</p>
+<ol>
+    <li>The code is executed in try {...}.</li>
+    <li>catch(err) is ignored if there are no errors. The execution gets to the end of the try and continues, skipping the catch.</li>
+    <li>In case there is an error, the execution of try is stopped. The control flows to the start of catch(err). So, the err variable (any name can be given to it) will involve an error object that includes details about what happened.    </li>
+</ol>
+
+  </body>
+</html>

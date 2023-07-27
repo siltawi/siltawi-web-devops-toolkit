@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h2>JSON (JavaScript Object Notation)</h2>
+    <p>JSON stands for JavaSCript Object Notation, and although it is clearly related to JavaScript, the two are not the same. Specifically, JSON is a data exchange format based on a subset of JavaScript syntax. JSON is a lightweight format, and its strengths are that it is easy for humans to read and for machines to parse.</p>
+
+    <h4>JSON Serialization in JavaScript</h4>
+    <p>JavaScript natively comes with the JSON  object. This exposes the following two static methods: </p>
+        <ul>
+           <li><u>JSON.stringify():</u> To convert a JavaScript array, object, or primitive value to a JSON string</li>
+            <li><u>JSON.parse():</u> To convert a JSON string to the corresponding JavaScript array, object, or primitive value.</li>
+        </ul>
+    
+        <h4>Reading/Writing JSON Files in JavaScript</h4>
+        <p>Vanilla JavaScript does not allow you to deal with the file system, but you can do it in your back-end with Node.js.</p>
+        
+<pre>
+
+// initializing a JavaScript object
+const user = {
+    id: 1,
+    completeName: "Jennifer Jones",
+    age: 20,
+};
+
+// converting the JSON object to a string
+const user = JSON.stringify(user);
+
+// writing the JSON string content to a file
+
+</pre>
+
+</body>
+</html>

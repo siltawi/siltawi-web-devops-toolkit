@@ -39,6 +39,44 @@ console.log(document.getElementById('pageLink'));</pre>
     p_list = doc.getElementsByTagName("para")
 </pre>
 
+<p>We can get element ById(), ByClassName(), or ByTagName() method to get a single element. Take a look an example:
+</p>
+<pre>
+let title = document.getElementById(‘title-id’);
+
+let elements = document.getElementsByClassName(‘list-elements’);
+
+let paragraphsEl = document.getElementsByTagName(‘p’);
+</pre>
+
+<h4>Changing HTML Elements</h4>
+<p>With HTML DOM we can change the content and style of an HTML element by changing its attribute. We use innerHTML attribute for changing the content of an HTML element.</p>
+
+<pre>
+document.getElementById("#title").innerHTML = 'Welcome to Siltawi!';
+document.getElementsByTagName("div").innerHTML = 'h1 Welcome to Siltawi! /h1';
+</pre>
+
+<h4>Adding and deleting elements</h4>
+<p>We can change almost everything about the DOM data structure. By changing parent-child relationships the shape of the document tree can be modified. Nodes have a remove method for removing them from their current parent node. If we want to add a child node to an element node, we can use appendChild, which puts it at the end of the list of children, or insertBefore.</p>
+<pre>
+let p = document.createElement(‘p’);
+let newContent = document.createTextNode("Welcome to Siltawi!"); 
+p.appendChild(newContent);
+document.body.insertBefore(p, currentP);
+
+element.parentNode.removeChild(element);
+</pre>
+
+<h4>Event Handlers</h4>
+<p>The HTML DOM allows Javascript to react to HTML events as well. Here is the list of some the most important ones:</p>
+<ul>
+    <li>mouse click</li>
+    <li>page load</li>
+    <li>mouse move</li>
+    <li>input field change</li>
+</ul>
+
     <h4>Example</h4>
     <p>Below is a simple example of manipulating DOM when an action of button clicking</p>
     <input id="name" />

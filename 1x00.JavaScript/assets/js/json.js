@@ -28,6 +28,7 @@ let json = JSON.stringify(user);
 console.log(json); // from object to json
 console.log(JSON.parse(json)); // from json to javascript object
 
+console.log(Object.keys(user).length);  // tod display the length of object property
 
 fetch('./assets/data/users.json')
     .then((response) => response.json())
@@ -41,9 +42,4 @@ fetch('https://randomuser.me/api')
 
 function displayUser(user) {
         console.log(user.gender);
-    }
-
-
-    for(let i=0; i <= 10; i++){
-        blog[i].title;
     }

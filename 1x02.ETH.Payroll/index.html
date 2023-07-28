@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETH Payroll Calculator</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h2><b>ETH</b> Employee Payroll Calculator</h2>
+
+    <div class="card">
+        <div class="row">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" />
+            </div>
+            
+            <div class="form-group">
+                <label for="salary">Salary</label>
+                <input class="number" type="text" id="salary" placeholder="ETB" />
+            </div>
+            
+            <div class="form-group">
+                <label for="pension">Pension</label>
+                <select class="select" id="pension">
+                    <option selected disabled>Select One</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row2">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Salary</td>
+                        <td>Inc. Tax</td>
+                        <td>Pension</td>
+                        <td>Net Pay</td>
+                    </tr>
+                </thead>
+                <tbody id="result">
+                </tbody>
+            </table>
+            <button class="button" type="submit"  id="btnPayrollCalc" >Calculate My Payroll</button>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

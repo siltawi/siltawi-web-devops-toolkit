@@ -16,7 +16,7 @@ Pay attention to every detail based on the result the result div style is change
 
 ```js
 // set pension
-pension = pension != 0 ? salary * 0.07 : 0;
+pensionPrice = pension != 'No' ? salary * 0.07 : 0;
 
 // calculate income tax based on tax rate
 // incomeTax = (salary * taxRate) - deduction;
@@ -37,5 +37,5 @@ else
     incomeTax = (salary * 0.35) - 1500;
 
 // Set net pay
-netPay = salary - incomeTax - pension;
+netPay = salary - incomeTax - pensionPrice;
 console.log(`Net Pay : ${netPay}`);

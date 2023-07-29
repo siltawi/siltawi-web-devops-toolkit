@@ -132,3 +132,17 @@ span {
     color: #E9F4F6;
     background-color: var(--info-color);
 }
+
+/* notifications */
+#errorMsg{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.error {
+    padding:10px;
+    background-color: #f5c47c;
+    border-radius: 20px;
+    text-align: center;
+}

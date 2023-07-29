@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Geez Futura";
+    src: url("../fonts/GeezFutura-Bold.ttf");
+}
+@font-face {
+    font-family: "Kiros";
+    src: url("../fonts/kiros.ttf");
+}
+body{
+    background-color: #E3E7E8;
+}
+
+h1{
+    font-family: "Geez Futura";
+}
+
+h1 span {
+    font-family: "Kiros";
+}

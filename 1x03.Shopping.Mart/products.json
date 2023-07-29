@@ -1,0 +1,66 @@
+[
+ {
+    "id": 10,
+    "name": "ሳንቡሳ / Sambusa",
+    "description" : "5 Pieces of Sambusas bread in one pack",
+    "type" : "Bread",
+    "image": "sambusa.jpg",
+    "price": 65
+ },  
+ {
+    "id": 11,
+    "name": "ጢቢኛ / Tibigna",
+    "description" : "",
+    "type" : "Bread",
+    "image": "tibigna.jpg",
+    "price": 55
+ },   
+ {
+    "id": 12,
+    "name": "ድፎ ዳቦ ተቆራጭ / Baguette Bread",
+    "description" : "",
+    "type" : "Bread",
+    "image": "agelgil.jpg",
+    "price": 38
+ },   
+ {
+    "id": 13,
+    "name": "ህብስት / Hibst",
+    "description" : "4kg weighted Hibist Ethiopian cultural bread.",
+    "type" : "Bread",
+    "image": "hibist.jpg",
+    "price": 480
+ },
+ {
+   "id": 14,
+   "name": "አምባሻ / Ambasha",
+   "description" : "1.5kg weighted Ambasha Ethiopian cultural flatten bread.",
+   "type" : "Bread",
+   "image": "anbasha.jpg",
+   "price": 180   
+ },   
+ {
+   "id": 15,
+   "name": "ሙልሙል ዳቦ / Mulmul Bread",
+   "description" : "Three Mulmul Ethiopian cultural breads each weighted 200g",
+   "type" : "Bread",
+   "image": "mulmul.jpg",
+   "price": 95
+ },  
+ {
+   "id": 16,
+   "name": "ድፎ ዳቦ / White Big Bread",
+   "description" : "3.5kg weighted big white Ethiopian cultural bread.",
+   "type" : "Bread",
+   "image": "difo.jpg",
+   "price": 390
+ },   
+ {
+   "id": 17,
+   "name": "ጥቁር ድፎ ዳቦ / Rye Big Bread",
+   "description" : "2kg weighted big black Ethiopian cultural bread.",
+   "type" : "Bread",
+   "image": "black-difo.jpg",
+   "price": 340
+ }   
+]

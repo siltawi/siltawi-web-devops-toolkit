@@ -16,4 +16,113 @@ h1{
 
 h1 span {
     font-family: "Kiros";
+    color: red;
+}
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+header .shopping img {
+    width: 40px;
+    cursor: pointer;;
+}
+header .shopping span {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: -5px;
+    left: 40px;
+    padding: 4px 9px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+.list .item{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 30px 30px #75767667;
+    border-radius: 20px;
+    width: 250px;
+    padding: 20px;
+}
+.list .item img {
+    width: 130px;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list .item button {
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 10px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 380px;
+    background-color: rgb(17, 17, 17);
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .cart {
+    left: calc(100% - 400px);
+}
+
+.active .container{
+    transform: translateX(-200px);
+}
+.cart h1 {
+    color: red;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.cart .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart .checkOut div {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cart .checkOut div:nth-child(2){
+    background-color: red;
+    color: white;
 }

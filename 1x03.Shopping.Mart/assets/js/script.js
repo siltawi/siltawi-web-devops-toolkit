@@ -1,25 +1,46 @@
-fetch('./products.json')
+// Initialize DOM elements
+let openShopping = document.querySelector('.shopping');
+let closeShopping = document.querySelector('.closeShopping');
+let list = document.querySelector('.list');
+let listCart = document.querySelector('.listCart');
+let body = document.querySelector('body');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
+
+// Add events on clicked to open and close cart page
+openShopping.addEventListener('click', ()=>{
+    body.classList.add('active');
+});
+closeShopping.addEventListener('click', ()=>{
+    body.classList.remove('active');
+});
+
+// Get our products data
+try{
+    fetch('./products.json')
     .then((response) => response.json())
     .then((data)=> {
         displayProducts(data);
     });
+}catch(msg){
+    console.warning(msg);
+}
 
 function displayProducts(products) {
  let length = products.length;
  let result = document.getElementById("products");
-
-    for(let x =0; x < length; x++){
-        console.table({"ID": `${products[x].id}`,
-                    "Name": `${products[x].name}`,
-                    "Image": `${products[x].image}`,
-                    "Price": `${products[x].price}` });
-        
-        result.innerHTML = `
-        <div style='width: 200px; background-color:#ccc'>
-            <h1>${products[0].name}</h1><br>
-            <img src='assets/img/${products[0].image}' /><br>
-            <h6>${products[0].price}</h6>
-        </div>        
-    `;
+    for(let x =0; x < products.length; x++){
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('item');
+        newDiv.innerHTML = `
+        <img src='assets/img/products/${products[x].image}' >
+        <div class='title'>${products[x].name}</div>
+        <div class='price'>${products[x].price} ETB</div>
+        <button onclick='addToCart(${x})'>Add to Cart</button>`;
+        list.appendChild(newDiv);
     }
+}
+
+function addToCart(key){
+
 }

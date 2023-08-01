@@ -7,6 +7,8 @@ let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
+let prod;
+
 // Add events on clicked to open and close cart page
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
@@ -26,21 +28,24 @@ try{
     console.warning(msg);
 }
 
+let listCarts  = [];
+
+
 function displayProducts(products) {
- let length = products.length;
- let result = document.getElementById("products");
-    for(let x =0; x < products.length; x++){
+    prod = products;
+    let length = products.length;
+
+    for(let x =0; x < length; x++){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
         <img src='assets/img/products/${products[x].image}' >
         <div class='title'>${products[x].name}</div>
         <div class='price'>${products[x].price} ETB</div>
-        <button onclick='addToCart(${x})'>Add to Cart</button>`;
+        <button onclick="addToCart(${x})">Add to Cart</button>`;
         list.appendChild(newDiv);
     }
 }
 
 function addToCart(key){
-
 }

@@ -84,6 +84,7 @@ header .shopping span {
     color: white;
     width: 90%;
     padding: 10px;
+    cursor: pointer;
 }
 
 .cart{
@@ -127,28 +128,4 @@ header .shopping span {
 .cart .checkOut div:nth-child(2){
     background-color: red;
     color: white;
-}
-
-
-/* Order List */
-.listCard li{
-    display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
-    row-gap: 10px;
-}
-.listCard li div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.listCard li img{
-    width: 90%;
-}
-.listCard li button{
-    background-color: #fff5;
-    border: none;
-}
-.listCard .count{
-    margin: 0 10px;
 }

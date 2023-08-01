@@ -53,18 +53,20 @@ header .shopping span {
 .list {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    align-items: center;
     column-gap: 20px;
-    row-gap: 30px;
-    margin-top: 30px;
+    row-gap: 20px;
+    margin-top: 20px;
+    align-items: center;
 }
 .list .item{
+    align-items: center;
+    margin: auto;
     text-align: center;
     background-color: white;
-    box-shadow: 0 30px 30px #75767667;
-    border-radius: 20px;
-    width: 250px;
     padding: 20px;
+    box-shadow: 0 30px 30px #75767667;
+    width: 250px;
+    border-radius: 20px;
 }
 .list .item img {
     width: 130px;
@@ -125,4 +127,28 @@ header .shopping span {
 .cart .checkOut div:nth-child(2){
     background-color: red;
     color: white;
+}
+
+
+/* Order List */
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
 }

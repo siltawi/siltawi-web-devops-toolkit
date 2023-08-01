@@ -1,9 +1,6 @@
 # Shopping Cart
-A complete design of UI/UX cart with products fetch from JSON file
-<img src="assets/img/01.shoppingCartUI.jpg" width='450px;'>
-
-When the cart icon clicked it will display cart window as belows.
-<img src="assets/img/02.shopping.CartMenu_UI.jpg" width='450px;'>
+###### A complete design of UI/UX cart with products fetch from JSON file. When the cart icon clicked it will display cart window as belows.
+<img src="assets/img/01.shoppingCartUI.jpg" width='450px;'> <img src="assets/img/02.shopping.CartMenu_UI.jpg" width='450px;'>
 
 * Use this css below for reference
 ```css

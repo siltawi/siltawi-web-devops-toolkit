@@ -129,3 +129,32 @@ header .shopping span {
     background-color: red;
     color: white;
 }
+
+/* Cart List */
+.listCart ul {
+    list-style: none;
+}
+.listCart li {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+.listCart li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCart li img {
+    width: 60%;
+    border-radius: 5px;
+}
+.listCart li button {
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+.listCart .count {
+margin: 0 10px;
+}

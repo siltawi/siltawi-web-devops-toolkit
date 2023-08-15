@@ -47,7 +47,7 @@ if(isset($_POST['addProd'])){
 ?>
 <form name="editFrom" method="POST" enctype="multipart/form-data" action="<?php echo $editFormAction; ?>">
     <div class="card">
-        <div class="card-header">Add Product</div>
+        <h5 class="card-header">New Product</h5>
         <div class="card-body">
             <div class="content">
                 <div class="row">

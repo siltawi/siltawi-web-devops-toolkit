@@ -37,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link <?php echo $currentPage == "prodList" ? "active" : null; ?>" aria-current="page" href="index.php?page=prodList">List Products</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $currentPage == "orders" ? "active" : null; ?>" aria-current="page" href="index.php?page=orders">Orders</a>
+                    </li>
                 </ul>
             </div>
 

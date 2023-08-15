@@ -3,8 +3,6 @@
    if (isset($_SERVER['QUERY_STRING'])) {
      $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
    }
-
-    //  base64_decode() -- base64_encode()
     // check product
     $prodID = isset($_GET['id']) ? $_GET['id'] : null;
 
@@ -26,8 +24,6 @@
         $productQty = $_POST['prodQty'];
         $productDesc = $_POST['prodDesc'];
         $oldProductImg = $_POST['oldProdImg'];
-
-        // $productDate = date('Y-m-d H:i:s');
   
         // Upload Image
         if($_FILES['prodImage']['name'] != ""){
